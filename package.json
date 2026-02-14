@@ -1,0 +1,27 @@
+{
+  "name": "kgl_backend_server",
+  "version": "1.0.0",
+  "description": "my kgl backend server ",
+  "keywords": [
+    "kgl",
+    "sytem"
+  ],
+  "homepage": "https://github.com/musapaul-ux/kgl_system#readme",
+  "bugs": {
+    "url": "https://github.com/musapaul-ux/kgl_system/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musapaul-ux/kgl_system.git"
+  },
+  "license": "ISC",
+  "author": "ALEX MUSA PAULINO LONGWORONG",
+  "type": "commonjs",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
