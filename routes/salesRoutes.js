@@ -1,5 +1,7 @@
 const express = require('express');
 const  saleSchema  = require('../models/sale');
+const authMiddleware = require('../middleware/authMiddleware');
+const roleMiddleware = require('../middleware/roleMiddleware');
 const router = express.Router();
 
 /**
@@ -59,7 +61,7 @@ const router = express.Router();
  *         description: Server error
  */
 
-router.post('/', async (req, res, next) =>{
+router.post('/',authMiddleware, roleMiddleware('SalesAgent'), async (req, res, next) =>{
     let body = req.body;
     try{
         const sale = new saleSchema(body);
